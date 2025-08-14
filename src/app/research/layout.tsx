@@ -1,4 +1,4 @@
-import ResearchSelector from "@/component/research/ResearchSelector";
+import ResearchSelector from "@/app/research/ResearchSelector";
 
 export default function SearchLayout({
 	children,

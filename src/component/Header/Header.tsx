@@ -12,11 +12,11 @@ export default function Header() {
 			</Link>
 			<NavigationMenu.Root>
 				<NavigationMenu.List className={styles.list}>
-					<NavigationMenu.Item>
-						<NavigationMenu.Trigger>
+					<NavigationMenu.Item className={styles.item}>
+						<NavigationMenu.Trigger className={styles.trigger}>
 							Nouveau <CaretDownIcon />
 						</NavigationMenu.Trigger>
-						<NavigationMenu.Content>
+						<NavigationMenu.Content className={styles.content}>
 							<ul>
 								<li>
 									<NavigationMenu.Link href="/new/artist">
@@ -32,10 +32,10 @@ export default function Header() {
 						</NavigationMenu.Content>
 					</NavigationMenu.Item>
 					<NavigationMenu.Item>
-						<NavigationMenu.Trigger>
+						<NavigationMenu.Trigger className={styles.trigger}>
 							Recherche <CaretDownIcon />
 						</NavigationMenu.Trigger>
-						<NavigationMenu.Content>
+						<NavigationMenu.Content className={styles.content}>
 							<ul>
 								<li>
 									<Link href="/research/artist">Artiste</Link>

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import "./ResearchSelector.css";
 
 const links = [
 	{ href: "/research/artist", label: "Artiste" },

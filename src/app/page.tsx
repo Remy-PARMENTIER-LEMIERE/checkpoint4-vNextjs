@@ -5,12 +5,13 @@ import styles from "./page.module.css";
 export default function Home() {
 	return (
 		<main className={styles.main}>
+			<h1>MyChords</h1>
 			<Image
 				src="/guitare.jpeg"
 				alt="Guitare sur un drap"
 				width={400}
 				height={300}
-				style={{ width: "100%", height: "auto" }}
+				style={{ width: "400px", height: "auto" }}
 			/>
 			<article>
 				<p>

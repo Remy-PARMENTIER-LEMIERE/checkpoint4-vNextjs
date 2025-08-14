@@ -1,0 +1,95 @@
+.form {
+	display: flex;
+	justify-content: center;
+
+	input {
+		padding: 0.5rem;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		outline: none;
+
+		&:focus {
+			border-color: #000000;
+		}
+	}
+}
+
+.resultsTitle {
+	font-size: 1.5rem;
+	margin: 1rem 0;
+	text-align: center;
+}
+
+.resultsSongList {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+	max-width: 616px;
+	margin: auto;
+
+	li > a {
+		display: flex;
+		gap: 1rem;
+		width: 300px;
+		padding: 0.5rem;
+		border-radius: 4px;
+
+		&:hover {
+			background-color: aliceblue;
+		}
+
+		& * {
+			margin: 0;
+		}
+
+		div {
+			h3 {
+				font-size: 1.05rem;
+			}
+
+			p {
+				font-size: 1rem;
+			}
+		}
+
+		div > a:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.resultsArtistList {
+	display: flex;
+	gap: 1rem 3rem;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: calc(600px + 12rem);
+	margin: auto;
+	padding: 0 3rem;
+
+	li {
+		width: min-content;
+	}
+
+	figure {
+		margin: 0;
+	}
+
+	figure img {
+		display: block;
+		border-radius: 4px 4px 0 0;
+	}
+
+	figcaption {
+		text-align: center;
+		padding: 0.5rem;
+		transition: background-color 0.3s ease;
+		border-radius: 0 0 4px 4px;
+	}
+
+	figure:hover figcaption {
+		background-color: aliceblue;
+	}
+}
