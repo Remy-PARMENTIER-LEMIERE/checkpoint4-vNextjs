@@ -2,6 +2,7 @@
 import { useActionState, useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { handleSubmitTextAndChords } from "@/actions/song/actions";
+import styles from "./SongPage.module.css";
 
 const initialState = {
 	status: "",
@@ -33,7 +34,7 @@ export default function LyricsAndChords({
 	}, [state]);
 
 	return (
-		<section>
+		<section className={styles.songMain}>
 			{isModifying ? (
 				<form action={action}>
 					<textarea

@@ -6,6 +6,7 @@ import { redirect } from "next/navigation";
 import { useActionState, useEffect } from "react";
 import { toast } from "react-toastify";
 import { deleteSong } from "@/actions/song/actions";
+import styles from "./SongPage.module.css";
 
 const initialState = {
 	status: "",
@@ -42,12 +43,13 @@ export default function SongHeader({
 	}, [state, song.artist.id]);
 
 	return (
-		<section>
+		<section className={styles.songHeader}>
 			<Image
 				src={song.artist.photo || "/music.jpg"}
 				alt={song.artist.name}
 				width={300}
 				height={300}
+				style={{ objectFit: "cover" }}
 			/>
 			<div>
 				<h1>{song.title}</h1>

@@ -1,0 +1,59 @@
+.songHeader {
+	display: flex;
+	gap: 2rem;
+	width: 532px;
+	margin: 0 auto 2rem;
+
+	img {
+		width: 150px;
+		height: 150px;
+	}
+
+	div {
+		width: 350px;
+		display: grid;
+		grid-template-columns: 1fr max-content;
+		align-items: center;
+		align-content: center;
+
+		h1 {
+			margin: 0;
+		}
+
+		button {
+			cursor: pointer;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.songMain {
+	width: 400px;
+	margin: 0 auto;
+
+	& > button {
+		margin: 0 0 0 auto;
+		display: block;
+	}
+
+	p {
+		white-space: pre-wrap;
+	}
+
+	form {
+		display: flex;
+		gap: 1rem 3rem;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		textarea {
+			width: 100%;
+			height: 500px;
+			padding: 8px;
+			resize: none;
+		}
+	}
+}
